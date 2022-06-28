@@ -38,7 +38,6 @@ class ViewController: UIViewController {
                 self.userList = elements
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    print(elements)
                 }
             }, onError:{ error in
                 

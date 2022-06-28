@@ -97,6 +97,7 @@
 		20151A13286AD1350053FA9C /* ApiServices */ = {
 			isa = PBXGroup;
 			children = (
+				20151A16286AFB8A0053FA9C /* NetworkServices.swift */,
 				20151A14286AD1550053FA9C /* UserApiServices.swift */,
 			);
 			path = ApiServices;
@@ -142,7 +143,6 @@
 			children = (
 				20151A13286AD1350053FA9C /* ApiServices */,
 				20151A0E286ACBBB0053FA9C /* DatabaseServices */,
-				20151A16286AFB8A0053FA9C /* NetworkServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
