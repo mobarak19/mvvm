@@ -22,15 +22,10 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         userDataObserver()
+
     }
     
     func userDataObserver(){
-        
-        //        userVM.getAllUser().subscribe { event in
-        //            if let userlist = event.element{
-        //                print(userlist.count)
-        //            }
-        //        }.disposed(by: userVM.disposeBag)
         
         userVM.getAllUser().subscribe(
             
@@ -57,7 +52,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         cell.textLabel?.text = userList[indexPath.row].name
         return cell
     }
