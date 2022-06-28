@@ -10,6 +10,11 @@
 		20151A03286AC0D80053FA9C /* UserReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A02286AC0D80053FA9C /* UserReq.swift */; };
 		20151A05286AC23D0053FA9C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A04286AC23D0053FA9C /* StringExtensions.swift */; };
 		20151A07286AC7CD0053FA9C /* UserDbRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A06286AC7CD0053FA9C /* UserDbRepoImp.swift */; };
+		20151A0A286AC96A0053FA9C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A09286AC96A0053FA9C /* Helpers.swift */; };
+		20151A0D286AC9A30053FA9C /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A0C286AC9A30053FA9C /* ApiEndPoints.swift */; };
+		20151A10286ACC200053FA9C /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A0F286ACC200053FA9C /* UserTable.swift */; };
+		20151A12286AD01F0053FA9C /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A11286AD01F0053FA9C /* URLSessionExtension.swift */; };
+		20151A15286AD1550053FA9C /* UserApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A14286AD1550053FA9C /* UserApiServices.swift */; };
 		20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FB286AAE21003DE41C /* AppDelegate.swift */; };
 		20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FD286AAE21003DE41C /* SceneDelegate.swift */; };
 		20CB9200286AAE21003DE41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FF286AAE21003DE41C /* ViewController.swift */; };
@@ -20,8 +25,6 @@
 		20CB9217286ABBA8003DE41C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9216286ABBA8003DE41C /* User.swift */; };
 		20CB921A286ABC44003DE41C /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9219286ABC44003DE41C /* UserRepo.swift */; };
 		20CB921C286ABC57003DE41C /* UserRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB921B286ABC57003DE41C /* UserRepoImp.swift */; };
-		20CB921E286ABC85003DE41C /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB921D286ABC85003DE41C /* ApiServices.swift */; };
-		20CB9220286ABC97003DE41C /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB921F286ABC97003DE41C /* DatabaseService.swift */; };
 		9F9DC5C89CE5C05518653424 /* Pods_SwiftMVVMRxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD2993AADB9C34360F1C19A /* Pods_SwiftMVVMRxSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,11 @@
 		20151A02286AC0D80053FA9C /* UserReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReq.swift; sourceTree = "<group>"; };
 		20151A04286AC23D0053FA9C /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		20151A06286AC7CD0053FA9C /* UserDbRepoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDbRepoImp.swift; sourceTree = "<group>"; };
+		20151A09286AC96A0053FA9C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		20151A0C286AC9A30053FA9C /* ApiEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = "<group>"; };
+		20151A0F286ACC200053FA9C /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
+		20151A11286AD01F0053FA9C /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		20151A14286AD1550053FA9C /* UserApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiServices.swift; sourceTree = "<group>"; };
 		20CB91F8286AAE21003DE41C /* SwiftMVVMRxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMVVMRxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB91FB286AAE21003DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20CB91FD286AAE21003DE41C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,8 +49,6 @@
 		20CB9216286ABBA8003DE41C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		20CB9219286ABC44003DE41C /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
 		20CB921B286ABC57003DE41C /* UserRepoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoImp.swift; sourceTree = "<group>"; };
-		20CB921D286ABC85003DE41C /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
-		20CB921F286ABC97003DE41C /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		3DBBCF81882459E1F3129AF8 /* Pods-SwiftMVVMRxSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMVVMRxSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftMVVMRxSwiftDemo/Pods-SwiftMVVMRxSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5FD2993AADB9C34360F1C19A /* Pods_SwiftMVVMRxSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMVVMRxSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD667069BFBEA0152C95BB1A /* Pods-SwiftMVVMRxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMVVMRxSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMVVMRxSwiftDemo/Pods-SwiftMVVMRxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +66,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20151A08286AC9560053FA9C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				20151A09286AC96A0053FA9C /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		20151A0B286AC9850053FA9C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				20151A0C286AC9A30053FA9C /* ApiEndPoints.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		20151A0E286ACBBB0053FA9C /* DatabaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				20151A0F286ACC200053FA9C /* UserTable.swift */,
+			);
+			path = DatabaseServices;
+			sourceTree = "<group>";
+		};
+		20151A13286AD1350053FA9C /* ApiServices */ = {
+			isa = PBXGroup;
+			children = (
+				20151A14286AD1550053FA9C /* UserApiServices.swift */,
+			);
+			path = ApiServices;
+			sourceTree = "<group>";
+		};
 		20CB91EF286AAE21003DE41C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,7 @@
 		20CB91FA286AAE21003DE41C /* SwiftMVVMRxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20151A0B286AC9850053FA9C /* Constants */,
 				20CB9223286ABE5C003DE41C /* Utilities */,
 				20CB9222286ABE13003DE41C /* Resources */,
 				20CB9221286ABDF6003DE41C /* AppSettings */,
@@ -97,8 +136,8 @@
 		20CB920F286AB99D003DE41C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				20CB921D286ABC85003DE41C /* ApiServices.swift */,
-				20CB921F286ABC97003DE41C /* DatabaseService.swift */,
+				20151A13286AD1350053FA9C /* ApiServices */,
+				20151A0E286ACBBB0053FA9C /* DatabaseServices */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -168,6 +207,7 @@
 		20CB9223286ABE5C003DE41C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				20151A08286AC9560053FA9C /* Helpers */,
 				20CB9224286ABE71003DE41C /* Extensions */,
 			);
 			path = Utilities;
@@ -177,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				20151A04286AC23D0053FA9C /* StringExtensions.swift */,
+				20151A11286AD01F0053FA9C /* URLSessionExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,16 +354,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CB9220286ABC97003DE41C /* DatabaseService.swift in Sources */,
 				20CB9200286AAE21003DE41C /* ViewController.swift in Sources */,
 				20CB921C286ABC57003DE41C /* UserRepoImp.swift in Sources */,
 				20151A07286AC7CD0053FA9C /* UserDbRepoImp.swift in Sources */,
 				20151A03286AC0D80053FA9C /* UserReq.swift in Sources */,
-				20CB921E286ABC85003DE41C /* ApiServices.swift in Sources */,
+				20151A12286AD01F0053FA9C /* URLSessionExtension.swift in Sources */,
 				20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */,
 				20151A05286AC23D0053FA9C /* StringExtensions.swift in Sources */,
 				20CB921A286ABC44003DE41C /* UserRepo.swift in Sources */,
+				20151A0D286AC9A30053FA9C /* ApiEndPoints.swift in Sources */,
+				20151A10286ACC200053FA9C /* UserTable.swift in Sources */,
 				20CB9215286ABB89003DE41C /* UserVM.swift in Sources */,
+				20151A0A286AC96A0053FA9C /* Helpers.swift in Sources */,
+				20151A15286AD1550053FA9C /* UserApiServices.swift in Sources */,
 				20CB9217286ABBA8003DE41C /* User.swift in Sources */,
 				20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */,
 			);

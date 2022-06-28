@@ -11,8 +11,8 @@ class UserVM {
     var userApiRepo:UserApiRepoImp!
     var userDbRepo :UserDbRepoImp!
     init(){
-        self.userApiRepo = UserApiRepoImp(api: ApiServices())
-        self.userDbRepo = UserDbRepoImp(db:DatabaseServices())
+        self.userApiRepo = UserApiRepoImp()
+        self.userDbRepo = UserDbRepoImp()
     }
     
 }

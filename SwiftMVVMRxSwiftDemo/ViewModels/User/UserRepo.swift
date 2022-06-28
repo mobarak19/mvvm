@@ -7,9 +7,12 @@
 
 import Foundation
 
+
 protocol UserRepo {
     func getAllUser()->[User]
 }
+
+
 protocol UserDbRepo {
     func getAllUser()->[User]
 }

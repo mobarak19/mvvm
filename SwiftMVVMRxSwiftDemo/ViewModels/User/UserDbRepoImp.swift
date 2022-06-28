@@ -9,10 +9,11 @@ import Foundation
 
 class UserDbRepoImp:UserDbRepo{
 
-    var db : DatabaseServices!
+    var db : UserTable!
     
-    init(db:DatabaseServices){
-        self.db = db
+    init(){
+        
+        self.db = UserTable.shared
     }
     
     func getAllUser() -> [User] {

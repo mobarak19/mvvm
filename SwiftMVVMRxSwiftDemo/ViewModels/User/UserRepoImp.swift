@@ -9,11 +9,11 @@ import Foundation
 
 class UserApiRepoImp:UserRepo{
     
-    var api : ApiServices!
+    var api : UserApiService!
     
-    init(api:ApiServices){
-    
-        self.api = api
+    init(){
+        
+        self.api = UserApiService.shared
     }
 
     func getAllUser() -> [User] {
