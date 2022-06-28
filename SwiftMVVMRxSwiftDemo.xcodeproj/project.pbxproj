@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20151A03286AC0D80053FA9C /* UserReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A02286AC0D80053FA9C /* UserReq.swift */; };
 		20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FB286AAE21003DE41C /* AppDelegate.swift */; };
 		20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FD286AAE21003DE41C /* SceneDelegate.swift */; };
 		20CB9200286AAE21003DE41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FF286AAE21003DE41C /* ViewController.swift */; };
 		20CB9203286AAE21003DE41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CB9201286AAE21003DE41C /* Main.storyboard */; };
 		20CB9205286AAE25003DE41C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CB9204286AAE25003DE41C /* Assets.xcassets */; };
 		20CB9208286AAE25003DE41C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CB9206286AAE25003DE41C /* LaunchScreen.storyboard */; };
+		20CB9215286ABB89003DE41C /* UserVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9214286ABB89003DE41C /* UserVM.swift */; };
+		20CB9217286ABBA8003DE41C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9216286ABBA8003DE41C /* User.swift */; };
+		20CB921A286ABC44003DE41C /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB9219286ABC44003DE41C /* UserRepo.swift */; };
+		20CB921C286ABC57003DE41C /* UserRepoImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB921B286ABC57003DE41C /* UserRepoImp.swift */; };
+		20CB921E286ABC85003DE41C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB921D286ABC85003DE41C /* NetworkService.swift */; };
+		20CB9220286ABC97003DE41C /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB921F286ABC97003DE41C /* DatabaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20151A02286AC0D80053FA9C /* UserReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReq.swift; sourceTree = "<group>"; };
 		20CB91F8286AAE21003DE41C /* SwiftMVVMRxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMVVMRxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB91FB286AAE21003DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20CB91FD286AAE21003DE41C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		20CB9204286AAE25003DE41C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20CB9207286AAE25003DE41C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20CB9209286AAE25003DE41C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CB9214286ABB89003DE41C /* UserVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVM.swift; sourceTree = "<group>"; };
+		20CB9216286ABBA8003DE41C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		20CB9219286ABC44003DE41C /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		20CB921B286ABC57003DE41C /* UserRepoImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoImp.swift; sourceTree = "<group>"; };
+		20CB921D286ABC85003DE41C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		20CB921F286ABC97003DE41C /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,102 @@
 		20CB91FA286AAE21003DE41C /* SwiftMVVMRxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				20CB91FB286AAE21003DE41C /* AppDelegate.swift */,
-				20CB91FD286AAE21003DE41C /* SceneDelegate.swift */,
-				20CB91FF286AAE21003DE41C /* ViewController.swift */,
-				20CB9201286AAE21003DE41C /* Main.storyboard */,
-				20CB9204286AAE25003DE41C /* Assets.xcassets */,
-				20CB9206286AAE25003DE41C /* LaunchScreen.storyboard */,
+				20CB9223286ABE5C003DE41C /* Utilities */,
+				20CB9222286ABE13003DE41C /* Resources */,
+				20CB9221286ABDF6003DE41C /* AppSettings */,
+				20CB9213286ABA59003DE41C /* Views */,
+				20CB9212286ABA4B003DE41C /* Controllers */,
+				20CB9211286AB9E1003DE41C /* ViewModels */,
+				20CB9210286AB9DA003DE41C /* Models */,
+				20CB920F286AB99D003DE41C /* Services */,
 				20CB9209286AAE25003DE41C /* Info.plist */,
 			);
 			path = SwiftMVVMRxSwiftDemo;
+			sourceTree = "<group>";
+		};
+		20CB920F286AB99D003DE41C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20CB921D286ABC85003DE41C /* NetworkService.swift */,
+				20CB921F286ABC97003DE41C /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		20CB9210286AB9DA003DE41C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20CB9216286ABBA8003DE41C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20CB9211286AB9E1003DE41C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20CB9218286ABBEA003DE41C /* User */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20CB9212286ABA4B003DE41C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20CB91FF286AAE21003DE41C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		20CB9213286ABA59003DE41C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20CB9201286AAE21003DE41C /* Main.storyboard */,
+				20CB9206286AAE25003DE41C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20CB9218286ABBEA003DE41C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				20CB9214286ABB89003DE41C /* UserVM.swift */,
+				20CB9219286ABC44003DE41C /* UserRepo.swift */,
+				20CB921B286ABC57003DE41C /* UserRepoImp.swift */,
+				20151A02286AC0D80053FA9C /* UserReq.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		20CB9221286ABDF6003DE41C /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				20CB91FD286AAE21003DE41C /* SceneDelegate.swift */,
+				20CB91FB286AAE21003DE41C /* AppDelegate.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		20CB9222286ABE13003DE41C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20CB9204286AAE25003DE41C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		20CB9223286ABE5C003DE41C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				20CB9224286ABE71003DE41C /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		20CB9224286ABE71003DE41C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +239,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CB9220286ABC97003DE41C /* DatabaseService.swift in Sources */,
 				20CB9200286AAE21003DE41C /* ViewController.swift in Sources */,
+				20CB921C286ABC57003DE41C /* UserRepoImp.swift in Sources */,
+				20151A03286AC0D80053FA9C /* UserReq.swift in Sources */,
+				20CB921E286ABC85003DE41C /* NetworkService.swift in Sources */,
 				20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */,
+				20CB921A286ABC44003DE41C /* UserRepo.swift in Sources */,
+				20CB9215286ABB89003DE41C /* UserVM.swift in Sources */,
+				20CB9217286ABBA8003DE41C /* User.swift in Sources */,
 				20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
