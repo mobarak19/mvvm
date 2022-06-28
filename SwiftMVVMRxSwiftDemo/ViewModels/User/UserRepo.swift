@@ -6,10 +6,10 @@
 //
 
 import Foundation
-
+import RxSwift
 
 protocol UserRepo {
-    func getAllUser()->[User]
+    func getAllUser()->Observable<[User]>
 }
 
 

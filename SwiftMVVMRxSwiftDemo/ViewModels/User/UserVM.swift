@@ -6,13 +6,16 @@
 //
 
 import Foundation
-
-class UserVM {
+import RxSwift
+class UserVM : BaseViewModel {
     var userApiRepo:UserApiRepoImp!
     var userDbRepo :UserDbRepoImp!
-    init(){
+    override init(){
         self.userApiRepo = UserApiRepoImp()
         self.userDbRepo = UserDbRepoImp()
     }
     
+    func getAllUser() -> Observable<[User]>{
+        return userApiRepo.getAllUser()
+    }
 }

@@ -6,17 +6,17 @@
 //
 
 import Foundation
-
+import RxSwift
 class UserApiRepoImp:UserRepo{
     
     var api : UserApiService!
     
     init(){
         
-        self.api = UserApiService.shared
+        self.api = UserApiService()
     }
 
-    func getAllUser() -> [User] {
-        return []
+    func getAllUser() -> Observable<[User]>{
+        return api.getAllUser()
     }
 }

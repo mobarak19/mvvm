@@ -15,6 +15,8 @@
 		20151A10286ACC200053FA9C /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A0F286ACC200053FA9C /* UserTable.swift */; };
 		20151A12286AD01F0053FA9C /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A11286AD01F0053FA9C /* URLSessionExtension.swift */; };
 		20151A15286AD1550053FA9C /* UserApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A14286AD1550053FA9C /* UserApiServices.swift */; };
+		20151A17286AFB8A0053FA9C /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A16286AFB8A0053FA9C /* NetworkServices.swift */; };
+		20151A19286B00B10053FA9C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A18286B00B10053FA9C /* BaseViewModel.swift */; };
 		20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FB286AAE21003DE41C /* AppDelegate.swift */; };
 		20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FD286AAE21003DE41C /* SceneDelegate.swift */; };
 		20CB9200286AAE21003DE41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FF286AAE21003DE41C /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 		20151A0F286ACC200053FA9C /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
 		20151A11286AD01F0053FA9C /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		20151A14286AD1550053FA9C /* UserApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiServices.swift; sourceTree = "<group>"; };
+		20151A16286AFB8A0053FA9C /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		20151A18286B00B10053FA9C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		20CB91F8286AAE21003DE41C /* SwiftMVVMRxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMVVMRxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB91FB286AAE21003DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20CB91FD286AAE21003DE41C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			children = (
 				20151A13286AD1350053FA9C /* ApiServices */,
 				20151A0E286ACBBB0053FA9C /* DatabaseServices */,
+				20151A16286AFB8A0053FA9C /* NetworkServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				20CB9218286ABBEA003DE41C /* User */,
+				20151A18286B00B10053FA9C /* BaseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 			files = (
 				20CB9200286AAE21003DE41C /* ViewController.swift in Sources */,
 				20CB921C286ABC57003DE41C /* UserRepoImp.swift in Sources */,
+				20151A19286B00B10053FA9C /* BaseViewModel.swift in Sources */,
 				20151A07286AC7CD0053FA9C /* UserDbRepoImp.swift in Sources */,
 				20151A03286AC0D80053FA9C /* UserReq.swift in Sources */,
 				20151A12286AD01F0053FA9C /* URLSessionExtension.swift in Sources */,
@@ -368,6 +375,7 @@
 				20151A0A286AC96A0053FA9C /* Helpers.swift in Sources */,
 				20151A15286AD1550053FA9C /* UserApiServices.swift in Sources */,
 				20CB9217286ABBA8003DE41C /* User.swift in Sources */,
+				20151A17286AFB8A0053FA9C /* NetworkServices.swift in Sources */,
 				20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

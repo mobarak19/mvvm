@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import RxSwift
 class ViewController: UIViewController {
 
     let tableView = UITableView()
@@ -18,7 +18,11 @@ class ViewController: UIViewController {
         tableView.frame = view.bounds
         view.addSubview(tableView)
         
-        
+        userVM.getAllUser().subscribe { event in
+            if let userlist = event.element{
+                print(userlist.count)
+            }
+        }.disposed(by: userVM.disposeBag)
         
     }
 
