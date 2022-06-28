@@ -6,23 +6,32 @@
 //
 
 import Foundation
-
+import RxSwift
 class UserApiService{
     
     static let shared = UserApiService()
     
-    func fetchUser(){
-//        URLSession.shared.request(url: Constants.userUrl, expecting: [User].self) {[weak self] result  in
-//            switch result{
-//            case .success(let users):
-//                self?.models = users
-//                DispatchQueue.main.async {
-//                    self?.table.reloadData()
-//                }
-//            case .failure(let error):
-//                print(error)
-//            }
-//            print(result)
-//        }
+    func fetchUser()->Observable<[User]>{
+        
+        return Observable<[User]>.create{ observer in
+            
+            guard let request = URL(string: "url") else {
+                  return Disposables.create()
+              }
+              let task = URLSession.shared.dataTask(with: request ) { (data, response, error) in
+                do {
+                  let model = try JSONDecoder().decode([User].self, from: data ?? Data())
+                  observer.onNext( model )
+                } catch let error {
+                  observer.onError(error)
+                }
+                observer.onCompleted()
+              }
+              
+              task.resume()
+              return Disposables.create {
+                task.cancel()
+              }
+        }
     }
 }

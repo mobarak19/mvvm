@@ -7,6 +7,6 @@
 
 import Foundation
 
-class UserTable{
+class UserTable {
     static let shared = UserTable()
 }
