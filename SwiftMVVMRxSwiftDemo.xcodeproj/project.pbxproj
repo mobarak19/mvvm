@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20151A03286AC0D80053FA9C /* UserReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A02286AC0D80053FA9C /* UserReq.swift */; };
+		20151A05286AC23D0053FA9C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20151A04286AC23D0053FA9C /* StringExtensions.swift */; };
 		20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FB286AAE21003DE41C /* AppDelegate.swift */; };
 		20CB91FE286AAE21003DE41C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FD286AAE21003DE41C /* SceneDelegate.swift */; };
 		20CB9200286AAE21003DE41C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB91FF286AAE21003DE41C /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		20151A02286AC0D80053FA9C /* UserReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReq.swift; sourceTree = "<group>"; };
+		20151A04286AC23D0053FA9C /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		20CB91F8286AAE21003DE41C /* SwiftMVVMRxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMVVMRxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB91FB286AAE21003DE41C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20CB91FD286AAE21003DE41C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		20CB9224286ABE71003DE41C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				20151A04286AC23D0053FA9C /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				20151A03286AC0D80053FA9C /* UserReq.swift in Sources */,
 				20CB921E286ABC85003DE41C /* NetworkService.swift in Sources */,
 				20CB91FC286AAE21003DE41C /* AppDelegate.swift in Sources */,
+				20151A05286AC23D0053FA9C /* StringExtensions.swift in Sources */,
 				20CB921A286ABC44003DE41C /* UserRepo.swift in Sources */,
 				20CB9215286ABB89003DE41C /* UserVM.swift in Sources */,
 				20CB9217286ABBA8003DE41C /* User.swift in Sources */,
