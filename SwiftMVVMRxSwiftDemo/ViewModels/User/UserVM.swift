@@ -8,9 +8,11 @@
 import Foundation
 
 class UserVM {
-    var repo:UserRepoImp!
-    init(_ repo:UserRepoImp){
-        self.repo = repo
+    var userApiRepo:UserApiRepoImp!
+    var userDbRepo :UserDbRepoImp!
+    init(){
+        self.userApiRepo = UserApiRepoImp(api: ApiServices())
+        self.userDbRepo = UserDbRepoImp(db:DatabaseServices())
     }
     
 }
